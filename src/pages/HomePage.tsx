@@ -1,14 +1,15 @@
 import React, { FC } from 'react';
-import { Outlet } from 'react-router-dom';
+import HardSkills from 'src/widgets/HardSkills/HardSkills';
 
 interface IHomePageProps {
+
 
 };
 
 const HomePage: FC<IHomePageProps> = ({ }) => {
   return (
     <div>
-      <div>HomePage</div>
+      <HardSkills />
     </div>
   )
 };

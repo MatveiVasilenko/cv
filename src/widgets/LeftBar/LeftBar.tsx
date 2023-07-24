@@ -7,7 +7,7 @@ interface ILeftBarProps {
 
 const LeftBar:FC<ILeftBarProps> = ({}) => {
   return (
-    <div className="w-[25%]">
+    <div className="w-[25%] bg-grey-light">
       <div>Photo</div>
       <ProjectsList />
       <div>Sites</div>
