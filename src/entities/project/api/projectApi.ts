@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { baseUrl } from 'src/app/config';
-import { IProjectLight } from '../model';
+import { IProject, IProjectLight } from '../model';
 
 
 export const projectApi = createApi({
@@ -10,9 +10,15 @@ export const projectApi = createApi({
     getProjects: builder.query<IProjectLight[], any>({
       query: () => `projects`,
     }),
+    getProject: builder.query<IProject, {
+      id: string;
+    }>({
+      query: ({ id }) => `projects/${id}`,
+    }),
   }),
 });
 
 export const {
   useGetProjectsQuery,
+  useGetProjectQuery,
 } = projectApi;

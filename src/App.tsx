@@ -12,7 +12,7 @@ const App = () => {
         )} />
         <Route element={<NavLayout />}>
           <Route path=":lang" element={<HomePage />} />
-          <Route path=":lang/project" element={<ProjectPage />} />
+          <Route path=":lang/project/:id" element={<ProjectPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

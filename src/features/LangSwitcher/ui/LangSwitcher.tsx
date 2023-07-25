@@ -17,9 +17,9 @@ const LangSwitcher: FC<ILangSwitcherProps> = ({
 }) => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
-  console.log(pathname)
+
   const changeLang = (newLang: TLang) => {
-    const PATH_WITHOUT_LANG = pathname.slice(3);
+    const PATH_WITHOUT_LANG = pathname.slice(4);
 
     navigate(`/${newLang}${PATH_WITHOUT_LANG ? '/' + PATH_WITHOUT_LANG : ''}`);
   }

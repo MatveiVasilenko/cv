@@ -7,13 +7,15 @@ interface INavLayoutProps {
 
 };
 
-const NavLayout:FC<INavLayoutProps> = ({}) => {
+const NavLayout: FC<INavLayoutProps> = ({ }) => {
   return (
-    <div className="container flex text-main text-green">
-      <LeftBar />
-      <div className="flex-1 bg-white">
-        <TopBar />
-        <Outlet />
+    <div className="my-10">
+      <div className="container flex text-main text-green shadow-2xl">
+        <LeftBar />
+        <div className="flex-1 bg-white">
+          <TopBar />
+          <Outlet />
+        </div>
       </div>
     </div>
   )
