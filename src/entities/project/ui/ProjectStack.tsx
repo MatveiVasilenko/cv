@@ -34,8 +34,8 @@ const ProjectStack = () => {
       variant="secondary"
     >
       <Card className="flex flex-col gap-3">
-        <div className="flex">
-          <div className="w-1/2 flex flex-col gap-2">
+        <div className="flex md:flex-nowrap flex-wrap md:gap-0 gap-4">
+          <div className="md:w-1/2 w-full flex flex-col gap-2">
             <div className="title uppercase">
               {projectStack?.left?.title}
             </div>
@@ -51,7 +51,7 @@ const ProjectStack = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/2 flex flex-col gap-2">
+          <div className="md:w-1/2 w-full flex flex-col gap-2">
             <div className="title uppercase">
               {projectStack?.right?.title}
             </div>

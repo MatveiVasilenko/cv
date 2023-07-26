@@ -33,7 +33,7 @@ const ProjectLink = () => {
     >
       <Card className="text-lg">
         <Link to={firstLink} target="_blank">
-          {firstLink}
+          {firstLink && 'Link for site'}
         </Link>
       </Card>
     </ContentBlock>
