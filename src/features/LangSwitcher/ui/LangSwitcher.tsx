@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { TLang } from 'src/app/config';
 import { twMerge } from 'tailwind-merge';

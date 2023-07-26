@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import { useGetProjectsQuery } from 'src/entities/project/api/projectApi';
 import image5 from 'src/assets/logo1.png';
 import image1 from 'src/assets/logo5.png';
@@ -11,11 +10,7 @@ import { STATIC_LANG_DATA } from 'src/app/lang';
 import { DEFAULT_LANG, TLang } from 'src/app/config';
 import { SmallCard } from 'src/shared/SmallCard';
 
-interface IProjectsListProps {
-
-};
-
-const ProjectsList: FC<IProjectsListProps> = ({ }) => {
+const ProjectsList = () => {
   const { lang = DEFAULT_LANG } = useParams<{
     lang: TLang;
   }>();

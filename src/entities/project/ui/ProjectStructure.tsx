@@ -1,16 +1,11 @@
-import React, { FC } from 'react';
 import { useGetProjectQuery } from '../api/projectApi';
 import { useParams } from 'react-router-dom';
-import { DEFAULT_LANG, TLang } from 'src/app/config';
+import { DEFAULT_LANG, DEFAULT_PROJECT_ID, TLang } from 'src/app/config';
 import ContentBlock from 'src/shared/ContentBlock';
 import { Card } from 'src/shared/Card';
 import { STATIC_LANG_DATA } from 'src/app/lang';
 
-interface IProjectStructureProps {
-
-};
-
-const ProjectStructure: FC<IProjectStructureProps> = ({ }) => {
+const ProjectStructure = () => {
   const {
     id,
     lang = DEFAULT_LANG,
@@ -21,7 +16,7 @@ const ProjectStructure: FC<IProjectStructureProps> = ({ }) => {
   const {
     data: project
   } = useGetProjectQuery({
-    id,
+    id: id ?? DEFAULT_PROJECT_ID,
   });
 
   const projectStructures = project && JSON.parse(project?.[`structure_${lang}`]); // Bad Backend :)

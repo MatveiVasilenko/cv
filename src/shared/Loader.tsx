@@ -1,10 +1,4 @@
-import React, { FC } from 'react';
-
-interface ILoaderProps {
-
-};
-
-const Loader:FC<ILoaderProps> = ({}) => {
+const Loader = () => {
   return (
     <div>
       Loading

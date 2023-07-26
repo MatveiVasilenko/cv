@@ -14,7 +14,7 @@ export const Card = ({
   className,
   children,
 }: React.AllHTMLAttributes<HTMLElement>) => (
-  <div className={twMerge('px-10 py-8', className)}>
+  <div className={twMerge('md:px-10 md:py-8 p-4', className)}>
     {children}
   </div>
 );

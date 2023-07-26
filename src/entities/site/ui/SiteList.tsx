@@ -1,15 +1,10 @@
-import React, { FC } from 'react';
 import ContentBlock from 'src/shared/ContentBlock';
 import { SmallCard } from 'src/shared/SmallCard';
 import { useGetSitesQuery } from '../api/siteApi';
 import { DEFAULT_LANG, TLang } from 'src/app/config';
 import { Link, useParams } from 'react-router-dom';
 
-interface ISiteListProps {
-
-};
-
-const SiteList: FC<ISiteListProps> = ({ }) => {
+const SiteList = () => {
   const { lang = DEFAULT_LANG } = useParams<{
     lang: TLang;
   }>();

@@ -19,9 +19,16 @@
 
 body {
   background: var(--grey-light);
+  box-sizing: border-box;
 }
 
-.container {
+.container-custom {
   width: 1280px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-custom {
+    width: 100%;
+  }
 }

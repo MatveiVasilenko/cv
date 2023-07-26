@@ -1,4 +1,6 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import { useAppDispatch } from 'src/app/store';
+import { setMainPage } from 'src/entities/core/slices/coreSlice';
 import ContactList from 'src/entities/user/ui/ContactList';
 import Educations from 'src/widgets/Educations/Educations';
 import Experiences from 'src/widgets/Experiences/Experiences';
@@ -13,6 +15,9 @@ interface IHomePageProps {
 };
 
 const HomePage: FC<IHomePageProps> = ({ }) => {
+  const dispatch = useAppDispatch();
+
+  dispatch(setMainPage(true));
   return (
     <div>
       <HardSkills />
@@ -23,7 +28,7 @@ const HomePage: FC<IHomePageProps> = ({ }) => {
       <Mission />
       <ContactList
         variantContentBlock="secondary"
-        classNameCard="flex-row gap-10 px-10 py-8"
+        classNameCard="md:flex-row flex-col gap-10 px-10 py-8"
       />
     </div>
   )

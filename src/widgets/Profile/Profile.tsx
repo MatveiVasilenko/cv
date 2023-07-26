@@ -1,15 +1,10 @@
-import React, { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { DEFAULT_LANG, TLang } from 'src/app/config';
 import { STATIC_LANG_DATA } from 'src/app/lang';
 import { Card } from 'src/shared/Card';
 import ContentBlock from 'src/shared/ContentBlock';
 
-interface IProfileProps {
-
-};
-
-const Profile: FC<IProfileProps> = ({ }) => {
+const Profile = () => {
   const { lang } = useParams<{
     lang: TLang;
   }>();

@@ -1,15 +1,10 @@
-import React, { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { DEFAULT_LANG, TLang } from 'src/app/config';
 import { EDUCATION_LANG_DATA, STATIC_LANG_DATA } from 'src/app/lang';
 import { Card } from 'src/shared/Card';
 import ContentBlock from 'src/shared/ContentBlock';
 
-interface IEducationsProps {
-
-};
-
-const Educations: FC<IEducationsProps> = ({ }) => {
+const Educations = () => {
   const { lang = DEFAULT_LANG } = useParams<{
     lang: TLang;
   }>();

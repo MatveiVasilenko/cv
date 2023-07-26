@@ -7,19 +7,27 @@ export interface IProject {
   mission_ua: string;
   description_en: string;
   description_ua: string;
-  structure_en: string[];
-  structure_ua: string[];
-  stack: {
-    left: {
-      lisp: string[];
+  structure_en: string;
+  structure_ua: string;
+  stack: string;
+  link: string;
+}
+
+export type TProjectStack = {
+  left: {
+    lisp: {
       title: string;
-    };
-    right: {
-      lisp: string[];
-      title: string;
-    };
+      percent: number;
+    }[];
+    title: string;
   };
-  link: string[];
+  right: {
+    lisp: {
+      title: string;
+      percent: number;
+    }[];
+    title: string;
+  };
 }
 
 export interface IProjectLight extends Pick<IProject, 'id' | 'logo' | 'title_en' | 'title_ua'> {

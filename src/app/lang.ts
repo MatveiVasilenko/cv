@@ -1,11 +1,15 @@
 export const STATIC_LANG_DATA = {
+  'myName': {
+    en: 'Matvii Vasylenko',
+    ua: 'Матвій Василенко',
+  },
   'projects': {
-    en: 'projects',
-    ua: 'проекти'
+    en: 'Projects',
+    ua: 'Проекти'
   },
   'aboutMe': {
-    en: 'about me',
-    ua: 'про мене'
+    en: 'About me',
+    ua: 'Про мене'
   },
   'aboutMeText': {
     en: `
@@ -21,7 +25,7 @@ export const STATIC_LANG_DATA = {
        <div>SASS product. The system consisted of a Web-app, Cabinet, Promo Page with which teachers shared their lessons and homework with students. 10+ clients</div>
        <div>I have the experience as a teamlead of 7 people (Task Manager - Linear)</div>
        <div>I always work according to the principle of using the most modern approaches in technologies. Actively worked on the development of IT in my region. I was as a speaker at 3 IT events. One of them is the large-scale event "MRPL IT WEEKENDS" - more than 350 IT specialists. Developed my own program for training Junior Front-end developers and created the educational YouTube channel. My main approach in work is meeting deadlines and continuous learning and development.</div>
-       <div>Now, I want to find a job in a company for the position of <b>Senior/Middle+ Frontend Developer or STO</b>. And use all my experience to improve or build a cool product for the company. I will be glad to cooperate!😉</div>
+       <div>Now, I want to find a job in a company for the position of <b>Senior/Middle+ Frontend Developer or CTO</b>. And use all my experience to improve or build a cool product for the company. I will be glad to cooperate!😉</div>
     `,
     ua: `
       <div>Всім привіт!</div>

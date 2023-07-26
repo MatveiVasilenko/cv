@@ -1,17 +1,12 @@
-import React, { FC } from 'react';
 import { useGetProjectQuery } from '../api/projectApi';
 import { Link, useParams } from 'react-router-dom';
-import { DEFAULT_LANG, TLang } from 'src/app/config';
+import { DEFAULT_LANG, DEFAULT_PROJECT_ID, TLang } from 'src/app/config';
 import ContentBlock from 'src/shared/ContentBlock';
 import { Card } from 'src/shared/Card';
 import { STATIC_LANG_DATA } from 'src/app/lang';
 import Loader from 'src/shared/Loader';
 
-interface IProjectLinkProps {
-
-};
-
-const ProjectLink:FC<IProjectLinkProps> = ({}) => {
+const ProjectLink = () => {
   const {
     id,
     lang = DEFAULT_LANG,
@@ -23,7 +18,7 @@ const ProjectLink:FC<IProjectLinkProps> = ({}) => {
     data: project,
     isLoading
   } = useGetProjectQuery({
-    id,
+    id: id ?? DEFAULT_PROJECT_ID,
   });
 
   const links = project && JSON.parse(project?.link); // Bad Backend :)

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { DEFAULT_LANG, TLang } from 'src/app/config';
 import { STATIC_LANG_DATA } from 'src/app/lang';

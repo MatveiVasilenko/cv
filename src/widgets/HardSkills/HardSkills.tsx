@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import ContentBlock from 'src/shared/ContentBlock';
 import { Card } from 'src/shared/Card';
 import viteLogo from 'src/assets/vite.svg';
@@ -7,11 +6,7 @@ import reduxLogo from 'src/assets/redux.svg';
 import LabelBubbles from 'src/shared/LabelBubbles';
 import { HARDSKILLS } from './config';
 
-interface IHardSkillsProps {
-
-};
-
-const HardSkills: FC<IHardSkillsProps> = ({ }) => {
+const HardSkills = () => {
   return (
     <ContentBlock
       title="HARD.SKILLS"
@@ -42,10 +37,14 @@ const HardSkills: FC<IHardSkillsProps> = ({ }) => {
             <span className="font-bold">Feature-Sliced Design</span>
             <span>architectural methodology</span>
           </div>
+          <div className="flex gap-1">
+            <div>You can see this project in my</div>
+            <a className="font-semibold" href="https://github.com/MatveiVasilenko/cv" target='_blank'>GitHub</a>
+          </div>
         </div>
         <div className="font-medium">What about another skills?</div>
-        <div className="flex">
-          <div className="w-1/2 flex flex-col gap-2">
+        <div className="flex md:flex-nowrap flex-wrap md:gap-0 gap-4">
+          <div className="md:w-1/2 w-full flex flex-col gap-2">
             <div className="title uppercase">Front-End</div>
             <div className="flex flex-col gap-1">
               {HARDSKILLS.frontend.map((item) => (
@@ -56,7 +55,7 @@ const HardSkills: FC<IHardSkillsProps> = ({ }) => {
               ))}
             </div>
           </div>
-          <div className="w-1/2 flex flex-col gap-4">
+          <div className="md:w-1/2 w-full flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <div className="title uppercase">Back-End</div>
               <div className="flex flex-col gap-1">
