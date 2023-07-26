@@ -16,8 +16,8 @@ const Educations = () => {
     >
       <Card className="flex flex-col gap-8">
         {EDUCATION_LANG_DATA.map((education, idx) => (
-          <div className="flex gap-8">
-            <Card.SmallColumn key={`edu${idx}`}>
+          <div key={`edu${idx}`} className="flex gap-8">
+            <Card.SmallColumn>
               <div className="font-medium text-lg">
                 {education.date}
               </div>

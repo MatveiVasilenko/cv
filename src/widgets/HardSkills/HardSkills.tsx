@@ -49,6 +49,7 @@ const HardSkills = () => {
             <div className="flex flex-col gap-1">
               {HARDSKILLS.frontend.map((item) => (
                 <LabelBubbles
+                  key={item.title}
                   label={item.title}
                   range={item.range}
                 />
@@ -61,6 +62,7 @@ const HardSkills = () => {
               <div className="flex flex-col gap-1">
                 {HARDSKILLS.backend.map((item) => (
                   <LabelBubbles
+                    key={item.title}
                     label={item.title}
                     range={item.range}
                   />
@@ -72,6 +74,7 @@ const HardSkills = () => {
               <div className="flex flex-col gap-1">
                 {HARDSKILLS.hobby.map((item) => (
                   <LabelBubbles
+                    key={item.title}
                     label={item.title}
                     range={item.range}
                   />

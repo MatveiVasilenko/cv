@@ -22,7 +22,7 @@ const SiteList = () => {
       >
         <div>
           {sites?.slice(0, 3).map((site) => (
-            <div>
+            <div key={site.id}>
               {site[`title_${lang}`]}
             </div>
           ))}

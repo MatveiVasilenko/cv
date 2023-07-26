@@ -25,8 +25,9 @@ const SoftSkills: FC<ISoftSkillsProps> = ({ }) => {
           <div className="md:w-1/2 w-full flex flex-col gap-2">
             <div className="title uppercase">Main</div>
             <div className="flex flex-col gap-1">
-              {SOFTSKILLS_LANG_DATA.main.map((item) => (
+              {SOFTSKILLS_LANG_DATA.main.map((item, idx) => (
                 <LabelBubbles
+                  key={`softMain${idx}`}
                   label={item.title[lang]}
                   range={item.range}
                 />
@@ -36,8 +37,9 @@ const SoftSkills: FC<ISoftSkillsProps> = ({ }) => {
           <div className="md:w-1/2 w-full flex flex-col gap-2">
             <div className="title uppercase">Language</div>
             <div className="flex flex-col gap-1">
-              {SOFTSKILLS_LANG_DATA.language.map((item) => (
+              {SOFTSKILLS_LANG_DATA.language.map((item, idx) => (
                 <LabelBubbles
+                  key={`softLang${idx}`}
                   label={item.title[lang]}
                   range={item.range}
                 />

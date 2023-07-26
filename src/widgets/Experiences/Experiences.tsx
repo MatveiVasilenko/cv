@@ -31,7 +31,7 @@ const Experiences = () => {
                 <div>Main responsibilities:</div>
                 <ul>
                   {experience.responsibilities[lang].map((resp) => (
-                    <li className="list-disc ml-8">
+                    <li key={resp} className="list-disc ml-8">
                       {resp}
                     </li>
                   ))}
@@ -41,7 +41,7 @@ const Experiences = () => {
                 <div>Achievement:</div>
                 <ul>
                   {experience.achievement[lang].map((resp) => (
-                    <li className="list-disc ml-8">
+                    <li className="list-disc ml-8" key={resp}>
                       {resp}
                     </li>
                   ))}
