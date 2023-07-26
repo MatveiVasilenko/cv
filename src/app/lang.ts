@@ -87,6 +87,46 @@ export const STATIC_LANG_DATA = {
     en: 'Link',
     ua: 'Посилання'
   },
+  'thisIsCv': {
+    en: 'This CV creating with',
+    ua: 'Це CV створено за допомогою'
+  },
+  'and': {
+    en: 'and',
+    ua: 'та'
+  },
+  'stateManager': {
+    en: 'State manager is a',
+    ua: 'Менеджер стейту -'
+  },
+  'apiManager': {
+    en: 'API manager is a',
+    ua: 'API менеджер -'
+  },
+  'iUsed': {
+    en: 'I used',
+    ua: 'Я використовував'
+  },
+  'arcMethod': {
+    en: 'architectural methodology',
+    ua: 'архитектурний підхід'
+  },
+  'canSee': {
+    en: 'You can see this project in my',
+    ua: 'Ви можете побачити його на моєму'
+  },
+  'whatAbout': {
+    en: 'What about another skills?',
+    ua: 'Більш детальний стек технології'
+  },
+  'mainResp': {
+    en: 'Main responsibilities',
+    ua: `Основні обов'язки`
+  },
+  'achievement': {
+    en: 'Achievement',
+    ua: 'Досягнення'
+  },
 };
 
 export const EXPERIENCE_LANG_DATA = [
@@ -94,7 +134,7 @@ export const EXPERIENCE_LANG_DATA = [
     date: '04.2022 - 07.2023',
     company: {
       en: 'Real Estate Software Platform "SymmetRE"',
-      ua: 'Real Estate Software Platform "SymmetRE"',
+      ua: 'Платформа керування будівництвом "SymmetRE"',
     },
     jobTitle: {
       en: 'MIDDLE+/SENIOR FRONT-END DEVELOPER',
@@ -102,17 +142,16 @@ export const EXPERIENCE_LANG_DATA = [
     },
     description: {
       en: 'We created a complex CRM system to manage the real estate building process.',
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Ми створили комплексну CRM систему для управління процесом будівництва нерухомості.'
     },
     responsibilities: {
       en: [
-        'Creating page & interface for application',
-        'Optimization code',
+        'Creating pages & interface for application',
+        'Code optimization ',
       ],
       ua: [
-        'Project architecture development',
-        'Deploying a server on nginx',
-        'Deploying Interfaces with React + Next',
+        'Створення сторінок та інтерфейсу програми',
+        'Оптимізація коду',
       ],
     },
     achievement: {
@@ -122,8 +161,9 @@ export const EXPERIENCE_LANG_DATA = [
         'Implemented FSD architecture',
       ],
       ua: [
-        'Project support by local companies ',
-        'Prepared an application for participation in grant programs',
+        'Впровадження TypeScript у проекті',
+        'Впровадження RTK та автоматичної генерації API через схеми БД',
+        'Впровадження FSD архітектури',
       ],
     }
   },
@@ -139,7 +179,7 @@ export const EXPERIENCE_LANG_DATA = [
     },
     description: {
       en: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.',
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Після успішного створення SASS-рішення онлайн платформи. Створив проект освітньої соціальної мережі, яка поєднувала у собі всі платформи. Продукт компанії - Web-додаток, CRM-система для керування продуктом.'
     },
     responsibilities: {
       en: [
@@ -148,20 +188,19 @@ export const EXPERIENCE_LANG_DATA = [
         'Deploying Interfaces with React + Next',
       ],
       ua: [
-        'Project architecture development',
-        'Deploying a server on nginx',
-        'Deploying Interfaces with React + Next',
+        'Розробка архітектури проекту',
+        'Розгортання сервера на nginx',
+        'Розгортання інтерфейсів на React+Next',
       ],
     },
     achievement: {
       en: [
-        'Project architecture development',
-        'Deploying a server on nginx',
-        'Deploying Interfaces with React + Next',
+        'Project support by local companies',
+        'Prepared an application for participation in grant programs',
       ],
       ua: [
-        'Project support by local companies ',
-        'Prepared an application for participation in grant programs',
+        'Підтримка проекту місцевими компаніями',
+        'Готували заявку на участь у грантових програмах',
       ],
     }
   },
@@ -169,7 +208,7 @@ export const EXPERIENCE_LANG_DATA = [
     date: '09.2021 - 11.2021',
     company: {
       en: 'Educational platform "MOTICH IT PRO"',
-      ua: 'Educational platform "MOTICH IT PRO"',
+      ua: 'Освітня платформа MOTICH IT PRO',
     },
     jobTitle: {
       en: 'FULL-STACK DEVELOPER',
@@ -177,14 +216,18 @@ export const EXPERIENCE_LANG_DATA = [
     },
     description: {
       en: 'Using React+Next, I created an online educational platform project. The platform implemented an assessment system, a system for checking and doing homework, a rating system.',
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Використовуючи React+Next, створив проект освітньої онлайн платформи. На платформі реалізували систему оцінювання, систему перевірки та виконання домашніх завдань, рейтингову систему.'
     },
     responsibilities: {
       en: [
-
+        'Project architecture development',
+        'Deploying a server on nginx',
+        'Deploying Interfaces with React + Next',
       ],
       ua: [
-
+        'Розробка архітектури проекту',
+        'Розгортання сервера на nginx',
+        'Розгортання інтерфейсів на React+Next',
       ],
     },
     achievement: {
@@ -192,7 +235,7 @@ export const EXPERIENCE_LANG_DATA = [
         'The architecture was originally written to scale the project, as a SASS solution.',
       ],
       ua: [
-        'The architecture was originally written to scale the project, as a SASS solution.',
+        'Архітектура спочатку була написана для масштабування проекту, як SASS-рішення.',
       ],
     }
   },
@@ -200,7 +243,7 @@ export const EXPERIENCE_LANG_DATA = [
     date: '01.2021 - 09.2021',
     company: {
       en: 'International IT-company ZendoTeam',
-      ua: 'International IT-company ZendoTeam',
+      ua: 'Міжнародна IT-компанія ZendoTeam',
     },
     jobTitle: {
       en: 'MIDDLE FRONT-END DEVELOPER',
@@ -208,7 +251,7 @@ export const EXPERIENCE_LANG_DATA = [
     },
     description: {
       en: 'Worked remotely at Zendo. Specialization - SASS solutions for MLM business. Company product - Web application, Android & IOS application, CRM system for product management',
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Віддалено працював у компанії Zendo. Спеціалізація - SASS-рішення для МЛМ бізнесу. Продукт компанії - Web-додаток, Додаток Android&IOS, CRM-система для керування продуктом'
     },
     responsibilities: {
       en: [
@@ -216,8 +259,8 @@ export const EXPERIENCE_LANG_DATA = [
         'Supervision of junior developers',
       ],
       ua: [
-        'Participated in the briefs of the product improvement team',
-        'Actively assisted and trained new employees',
+        'Розробка інтерфейсів на React',
+        'Керування Junior-розробників',
       ],
     },
     achievement: {
@@ -226,8 +269,8 @@ export const EXPERIENCE_LANG_DATA = [
         'Actively assisted and trained new employees',
       ],
       ua: [
-        'Participated in the briefs of the product improvement team',
-        'Actively assisted and trained new employees',
+        'Брав участь у брифах команди з покращення продукту',
+        'Активно допомагав навчанню нових співробітників',
       ],
     }
   },
@@ -235,7 +278,7 @@ export const EXPERIENCE_LANG_DATA = [
     date: '06.2020 - 12.2020',
     company: {
       en: 'VAHTA attendance system',
-      ua: 'VAHTA attendance system',
+      ua: 'Система контролю відвідуваності VAHTA',
     },
     jobTitle: {
       en: 'FULL-STACK DEVELOPER',
@@ -243,7 +286,7 @@ export const EXPERIENCE_LANG_DATA = [
     },
     description: {
       en: `Created an attendance control system on React(React-Native) + Laravel. The project conditionally had two implementation models. The first is a card scanning system, a Web application using a QR scanner reads the code on visitors' cards and the system saves information about visits, as well as monitors the financial condition of the client. The second model - using the application on two phones. One of them has an account of the event or event organizer, and the second is an event visitor. Visit information is also stored by the system and displayed to administrators.`,
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Створив систему контролю відвідуваності на React (React-Native) + Laravel. Проект умовно мав дві моделі реалізації. Перша - система сканування карт, Web-додаток використовуючи QR-сканер зчитував код на картках відвідувачів і система зберігала інформацію про відвідування, а також моніторило фінансовий стан клієнта. Друга модель – за допомогою програми на двох телефонах. Один з них має обліковий запис організатора події або події, а другий відвідувач події. Інформація про відвідування також зберігається системою та відображається для адміністраторів.'
     },
     responsibilities: {
       en: [
@@ -251,8 +294,8 @@ export const EXPERIENCE_LANG_DATA = [
         'Scalling product',
       ],
       ua: [
-        'Participated in the briefs of the product improvement team',
-        'Actively assisted and trained new employees',
+        'Створення продукту',
+        'Масштабування продукту',
       ],
     },
     achievement: {
@@ -261,8 +304,8 @@ export const EXPERIENCE_LANG_DATA = [
         'Start creating a component library for all applications',
       ],
       ua: [
-        'Participated in the briefs of the product improvement team',
-        'Actively assisted and trained new employees',
+        'Активне масштабування програми',
+        'Створення бібліотеки компонентів для всіх програм',
       ],
     }
   },
@@ -274,18 +317,18 @@ export const EXPERIENCE_LANG_DATA = [
     },
     jobTitle: {
       en: 'FRONT-END TEACHER (REACT)',
-      ua: 'FRONT-END TEACHER (REACT)',
+      ua: 'ВИКЛАДАЧ FRONT-END (REACT)',
     },
     description: {
       en: `Worked at the Mariupol branch of the academy as a front-end teacher. Trained over 50 students. During the course students studied HTML/CSS, JavaScript, gulp/webpack, git`,
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Працював в Маріупольському філіалі академії викладачем Front end. Випустив більше 50 студентів. На протязі курсу студенти вивчали HTML/CSS, JavaScript, gulp/webpack, git'
     },
     responsibilities: {
       en: [
-
+        'Learning students'
       ],
       ua: [
-
+        'Навчання учнів'
       ],
     },
     achievement: {
@@ -293,7 +336,7 @@ export const EXPERIENCE_LANG_DATA = [
         'Collected independently and released 2 groups for learning React - created a program for this course',
       ],
       ua: [
-        'Participated in the briefs of the product improvement team',
+        'Собрав та випустив 2 групи для вивчення React - створив программу для цього курсу',
       ],
     }
   },
@@ -301,15 +344,15 @@ export const EXPERIENCE_LANG_DATA = [
     date: '01.2020 - 03.2022',
     company: {
       en: 'Communal institution "M SPORT"',
-      ua: 'Communal institution "M SPORT"',
+      ua: 'Комунальний заклад "M SPORT"',
     },
     jobTitle: {
       en: 'CHIEF SPECIALIST OF IT DEPARTMENT',
-      ua: 'CHIEF SPECIALIST OF IT DEPARTMENT',
+      ua: 'ГОЛОВНИЙ ФАХІВЕЦЬ ВІДДІЛУ IT',
     },
     description: {
       en: `Remotely worked in a municipal institution of the city of Mariupol - M SPORT`,
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Віддалено працював у комунальній установі міста Маріуполь - M SPORT'
     },
     responsibilities: {
       en: [
@@ -317,8 +360,8 @@ export const EXPERIENCE_LANG_DATA = [
         'System administration',
       ],
       ua: [
-        'Site support and administration',
-        'System administration',
+        'Підтримка та адміністрування сайту',
+        'Системне адміністрування',
       ],
     },
     achievement: {
@@ -327,8 +370,8 @@ export const EXPERIENCE_LANG_DATA = [
         'Creating a beta version of the M Sport mobile application (React Native)'
       ],
       ua: [
-        'Development of an assessment system for employees (React)',
-        'Creating a beta version of the M Sport mobile application (React Native)'
+        'Розробка системи оцінювання для співробітників (React)',
+        'Створення бета-версії мобільного додатка M Sport (React Native)'
       ],
     }
   },
@@ -344,7 +387,7 @@ export const EXPERIENCE_LANG_DATA = [
     },
     description: {
       en: `I worked as a Front-end developer, and then as a Back-end developer in a web studio that developed landing-pages, corporate and information sites.`,
-      ua: 'After successfully creating an online platform SASS solution. Created a project of an educational social network that combined all platforms. Company product - Web application, CRM system for product management.'
+      ua: 'Працював Front-end розробником, а потім і Back-end розробником у веб-студії, яка займалася розробкою landing-pages, корпоративних та інформаційних сайтів.'
     },
     responsibilities: {
       en: [
@@ -352,8 +395,8 @@ export const EXPERIENCE_LANG_DATA = [
         'Creating BE Side for web-sites',
       ],
       ua: [
-        'Site support and administration',
-        'System administration',
+        'Створення FE для сайтів',
+        'Створення BE для сайтів',
       ],
     },
     achievement: {
@@ -361,7 +404,7 @@ export const EXPERIENCE_LANG_DATA = [
         'The studio has implemented more than 15 projects of varying complexity and focus',
       ],
       ua: [
-        'The studio has implemented more than 15 projects of varying complexity and focus',
+        'Студія реалізувала більше 15 проектів різної складності та спрямованості',
       ],
     }
   }

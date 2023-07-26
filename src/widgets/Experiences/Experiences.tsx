@@ -18,9 +18,11 @@ const Experiences = () => {
         {EXPERIENCE_LANG_DATA.map((experience, idx) => (
           <div
             key={`exp${idx}`}
-            className="flex w-full gap-8"
+            className="flex md:flex-nowrap flex-wrap w-full md:gap-8 gap-2"
           >
-            <Card.SmallColumn>
+            <Card.SmallColumn
+              className="md:w-[20%] w-full"
+            >
               <div className="text-lg font-medium">{experience.date}</div>
               <div>{experience.company[lang]}</div>
             </Card.SmallColumn>
@@ -28,7 +30,7 @@ const Experiences = () => {
               <div className="text-lg font-bold">{experience.jobTitle[lang]}</div>
               <div>{experience.description[lang]}</div>
               <div>
-                <div>Main responsibilities:</div>
+                <div>{STATIC_LANG_DATA.mainResp[lang]}:</div>
                 <ul>
                   {experience.responsibilities[lang].map((resp) => (
                     <li key={resp} className="list-disc ml-8">
@@ -38,7 +40,7 @@ const Experiences = () => {
                 </ul>
               </div>
               <div>
-                <div>Achievement:</div>
+                <div>{STATIC_LANG_DATA.achievement[lang]}:</div>
                 <ul>
                   {experience.achievement[lang].map((resp) => (
                     <li className="list-disc ml-8" key={resp}>
